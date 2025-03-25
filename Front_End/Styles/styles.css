@@ -1,0 +1,171 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Full-screen Gradient Background */
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fbc2eb, #8ec5fc, #70e1f5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 6s infinite alternate;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: black;  /* Dark Text Globally */
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Glassmorphism Card */
+.calculation-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px;
+  text-align: center;
+  width: 480px;
+  color: black; /* Dark Text */
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Title with Dark Bold */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: black; /* Dark */
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Input Fields */
+input, select {
+  width: 90%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  color: black;  /* Dark Text */
+  font-weight: bold;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Hover & Focus */
+input:focus, select:focus {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Creative Select Dropdown */
+select {
+  appearance: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+/* Buttons Container */
+.button-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+/* 🚀 Creative Neon Button */
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  color: black;
+}
+
+/* Get Started Button - Blue Neon */
+.get-started {
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  color: black;
+  border: 3px solid rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+/* ✅ Improved Calculate Button - Green Neon with 3D Effect */
+.calculate-button {
+  background: linear-gradient(45deg, #34d399, #10b981);
+  border: 3px solid rgba(34, 211, 147, 0.5);
+  box-shadow: 0 0 20px rgba(34, 211, 147, 0.7), 0 8px 20px rgba(34, 211, 147, 0.5);
+  border-bottom: 4px solid #0d8050;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect - Brighter Neon */
+.calculate-button:hover {
+  transform: translateY(-5px);
+  border-color: white;
+  box-shadow: 0 0 30px rgba(34, 211, 147, 0.9), 0 12px 24px rgba(34, 211, 147, 0.7);
+}
+
+/* Click Effect - Slight Press */
+.calculate-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Button - Orange Neon */
+.back-button {
+  background: linear-gradient(45deg, #ff7e5f, #ff6b81);
+  color: black;
+  border: 3px solid rgba(255, 126, 95, 0.5);
+  box-shadow: 0 0 10px rgba(255, 126, 95, 0.6);
+}
+
+/* Food Recommendation Button - Pink Neon */
+.food-recommendation {
+  background: linear-gradient(45deg, #ff4d79, #ff6bb5);
+  color: black;
+  border: 3px solid rgba(255, 77, 121, 0.5);
+  box-shadow: 0 0 10px rgba(255, 77, 121, 0.6);
+}
+
+/* 3D Button Hover Effects */
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
